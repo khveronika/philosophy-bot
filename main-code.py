@@ -2,8 +2,8 @@ import telebot
 from telebot import types
 import sqlite3
 import wikipediaapi
+from config import BOT_TOKEN
 
-BOT_TOKEN = ''
 wiki_wiki = wikipediaapi.Wikipedia('ru')
 bot = telebot.TeleBot(BOT_TOKEN, threaded=False)
 
